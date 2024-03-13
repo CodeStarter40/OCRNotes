@@ -10,7 +10,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel //indique que la classe MainViewModel est un ViewModel hitl injectable
-class MainViewModel @Inject constructor(private val notesRepository: NotesRepository) : ViewModel() {
+class MainViewModel @Inject constructor(private val notesRepository: NotesRepository) : ViewModel() { //mainviewmodel doit être injecté avec un instance de NotesRepository
     //déclaration d'une LiveData mutable pour stocker la liste des notes
     private val _notes = MutableLiveData<List<Note>>()
     val notes: LiveData<List<Note>> = _notes
