@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     private val notesAdapter = NotesAdapter(emptyList()) //déclaration d'un adaptateur pour la liste de notes
 
-    private val notesRepository = NotesRepository() //déclaration d'une instance du repository de notes
+    //private val notesRepository = NotesRepository() //déclaration d'une instance du repository de notes
 
 
 

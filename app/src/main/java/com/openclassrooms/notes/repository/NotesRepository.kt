@@ -5,11 +5,14 @@ import com.openclassrooms.notes.service.NotesApiService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import com.openclassrooms.notes.model.Note
+import javax.inject.Inject
+import javax.inject.Singleton
 
 /**
  * Repository class for the notes.
  */
-class NotesRepository {
+@Singleton
+class NotesRepository @Inject constructor() {
 
     /**
      * The API service for interacting with notes.

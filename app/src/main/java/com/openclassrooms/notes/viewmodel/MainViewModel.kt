@@ -3,7 +3,6 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.openclassrooms.notes.model.Note
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import com.openclassrooms.notes.repository.NotesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -27,4 +26,5 @@ class MainViewModel @Inject constructor(private val notesRepository: NotesReposi
             notesRepository.notes.collect { notesList -> _notes.postValue(notesList) } //met à jour les notes dans la LiveData mutable
         }
     }
+
 }
