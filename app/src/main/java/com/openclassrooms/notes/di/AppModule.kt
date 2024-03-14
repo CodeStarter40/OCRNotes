@@ -4,15 +4,16 @@ import com.openclassrooms.notes.data.LocalNotesApiService
 import com.openclassrooms.notes.service.NotesApiService
 import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class AppModule {
+object AppModule {
 
-    @Binds
+    @Provides
     @Singleton
-    abstract fun bindNotesApiService(localNotesApiService: LocalNotesApiService): NotesApiService
+    fun provideNotesApiService(): NotesApiService = LocalNotesApiService()
 }
