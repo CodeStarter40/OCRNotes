@@ -25,7 +25,8 @@ class LocalNotesApiServiceTest {
         assert(result.isNotEmpty())//verif que le résultat n'est pas vide
 
         //verif que le résultat contient un élément spécifique cad title de la première note
-        assertEquals("Test result failure", result.first().title, "La vie est belle")
+        assertEquals("Test title failure", result.first().title, "La vie est belle")
+        assertEquals("test body failure", result.first().body,"La vie est belle, pleine de choses à voir et à faire. Profitez de chaque moment et ne laissez jamais personne vous dire que vous ne pouvez pas faire ce que vous voulez.")
 
     }
 }
