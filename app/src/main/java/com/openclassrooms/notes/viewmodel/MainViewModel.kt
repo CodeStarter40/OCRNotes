@@ -12,7 +12,7 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(private val notesRepository: NotesRepository) : ViewModel() { //mainviewmodel doit être injecté avec un instance de NotesRepository
     //déclaration d'une LiveData mutable pour stocker la liste des notes
     private val _notes = MutableLiveData<List<Note>>()
-    val notes: LiveData<List<Note>> = _notes
+    val notes: LiveData<List<Note>> = _notes //_ pour mutable
 
     //init de la collecte des notes lors de la création du ViewModel
     init {
