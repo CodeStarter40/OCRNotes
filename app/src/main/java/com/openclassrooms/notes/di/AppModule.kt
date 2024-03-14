@@ -2,7 +2,6 @@ package com.openclassrooms.notes.di
 
 import com.openclassrooms.notes.data.LocalNotesApiService
 import com.openclassrooms.notes.service.NotesApiService
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

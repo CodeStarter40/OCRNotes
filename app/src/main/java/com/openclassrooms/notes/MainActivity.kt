@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
 
     private val notesAdapter = NotesAdapter(emptyList()) //déclaration d'un adaptateur pour la liste de notes
 
-    //private val notesRepository = NotesRepository() //déclaration d'une instance du repository de notes
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,19 +39,8 @@ class MainActivity : AppCompatActivity() {
 
         initRecyclerView()
         initFABButton()
-        //collectNotes()
-    }
 
-    /**
-     * Collects notes from the repository and updates the adapter.
-     */
-   /* private fun collectNotes() {
-        lifecycleScope.launch {
-            notesRepository.notes.collect {
-                notesAdapter.updateNotes(it)
-            }
-        }
-    }*/
+    }
 
     /**
      * Initializes the FAB button.
