@@ -28,5 +28,4 @@ class MainViewModel @Inject constructor(private val notesRepository: NotesReposi
             notesRepository.notes.collect { notesList -> _notes.postValue(notesList) } //met à jour les notes dans la LiveData mutable
         }
     }
-
 }
