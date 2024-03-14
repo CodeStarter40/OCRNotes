@@ -1,3 +1,5 @@
+package com.openclassrooms.notes
+
 import com.openclassrooms.notes.data.LocalNotesApiService
 import org.junit.Before
 import org.junit.Test
