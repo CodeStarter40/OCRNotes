@@ -1,3 +1,5 @@
+package com.openclassrooms.notes.viewmodel
+
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.LiveData

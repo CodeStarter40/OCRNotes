@@ -1,6 +1,6 @@
 package com.openclassrooms.notes
 
-import MainViewModel
+import com.openclassrooms.notes.viewmodel.MainViewModel
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
