@@ -12,7 +12,7 @@ import javax.inject.Singleton
  * Repository class for the notes.
  */
 @Singleton
-class NotesRepository @Inject constructor() {
+class NotesRepository @Inject constructor(notesApiService: NotesApiService) {
 
     /**
      * The API service for interacting with notes.

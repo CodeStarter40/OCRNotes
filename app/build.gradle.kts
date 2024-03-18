@@ -47,6 +47,7 @@ dependencies {
     val lifecycle_version = "2.7.0"
     val arch_version = "2.2.0"
     val hiltVersion = "2.51"
+    val version_coroutines = "1.8.0"
 
     //lifecycle
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version") //viewmodel
@@ -72,6 +73,8 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     testImplementation("androidx.arch.core:core-testing:$arch_version") // test helpers for livedata
     testImplementation("org.mockito:mockito-core:3.+")
+    testImplementation("org.mockito:mockito-inline:3.+")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:$version_coroutines")
 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
